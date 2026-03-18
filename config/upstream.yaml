@@ -1,0 +1,15 @@
+libraries:
+  fla:
+    repo: "https://github.com/fla-org/flash-linear-attention"
+    commit: ""
+    version: ""
+    integrated_at: ""
+    kernels: []
+
+  liger-kernel:
+    repo: "https://github.com/linkedin/Liger-Kernel"
+    commit: "68a74894b178e5f4ddae518c3e3d658f1aa4e8c2"
+    version: "v0.7.0"
+    integrated_at: "2026-03-18"
+    kernels:
+      - "geglu"

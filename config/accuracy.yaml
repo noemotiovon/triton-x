@@ -1,0 +1,23 @@
+default:
+  atol: 1e-4
+  rtol: 1e-4
+  max_diff_ratio: 0.01
+
+dtype_overrides:
+  float16:
+    atol: 1e-3
+    rtol: 1e-3
+  bfloat16:
+    atol: 1e-2
+    rtol: 1e-2
+  float32:
+    atol: 1e-5
+    rtol: 1e-5
+
+# Per-kernel overrides when default thresholds are insufficient.
+# Example:
+#   fla/fused_recurrent_gla:
+#     atol: 1e-2
+#     rtol: 1e-2
+#     reason: "Numerical accumulation in long sequences"
+kernel_overrides: {}

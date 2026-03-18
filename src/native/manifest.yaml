@@ -1,0 +1,13 @@
+library: "native"
+description: "User-defined kernels (not from upstream libraries)"
+
+kernels: []
+# Example entry:
+#   - name: "my_custom_kernel"
+#     cuda_path: "cuda/my_custom_kernel.py"
+#     ascend_path: "ascend/my_custom_kernel.py"
+#     test_path: "tests/native/test_my_custom_kernel.py"
+#     source: "generated"        # generated | manual
+#     status: "pending"          # pending | converted | testing | verified | failed
+#     last_updated: ""
+#     notes: ""

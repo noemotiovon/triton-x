@@ -1,0 +1,12 @@
+library: "liger-kernel"
+source_commit: "68a74894b178e5f4ddae518c3e3d658f1aa4e8c2"
+
+kernels:
+  - name: "geglu"
+    cuda_path: "cuda/geglu.py"
+    ascend_path: "ascend/generated/geglu.py"
+    test_path: "tests/liger-kernel/test_geglu.py"
+    source: "generated"
+    status: "converted"
+    last_updated: "2026-03-18"
+    notes: "NPU kernel generated from CUDA source using flat 1D grid-stride loop pattern"
